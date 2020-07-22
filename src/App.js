@@ -26,7 +26,7 @@ class App extends Component {
 
     const API_KEY = "d564f1a009343f0e0733144706c082e9";
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
     let response = await fetch(url);
     let data = await response.json();
     this.setState({
@@ -42,7 +42,7 @@ class App extends Component {
 
     const API_KEY = "d564f1a009343f0e0733144706c082e9";
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${API_KEY}&units=metric`;
 
     let response = await fetch(url);
     let data = await response.json();
